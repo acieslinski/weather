@@ -1,6 +1,6 @@
-# Weather
+# Weather app
 
-# How to run
+## How to run
 
 To build and install app just type **./gradlew intstallDebug** from the root of the project. Run **adb devices** to be sure that your device is connected.
 
@@ -14,12 +14,12 @@ To run instrumented tests you can run **./gradlew connectedAndroidTest** from th
 
 The app can be run on minimum 10th version of Android (Gingerbread)
 
-# Examples of features to do in future
+## Examples of features to do in future
 
 - sorting the list of weather records according to the date (descending)
 - showing details of weather in a dialog
 
-# Current technical debts
+## Current technical debts
 
 - lack of tests
 - lack of dependency injection
