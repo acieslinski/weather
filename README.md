@@ -8,11 +8,11 @@ To just make a build run **./gradlew assembleDebug** from the root of the projec
 
 To use your emulator run **emulator -avd avd_name**. You can find the list of available emulators with **emulator -list-avds**. Once your emulator is ready run **adb install path/to/your_app.apk**.
 
-**Tests are not implemented yet**
+**Tests are not implemented yet (just examples)**
 To run unit tests you can run **./gradlew test** from the root of the project. The test result will be in *path_to_your_project/app/build/reports/tests/* directory.
 To run instrumented tests you can run **./gradlew connectedAndroidTest** from the root of the project. The test result will be in *path_to_your_project/app/build/outputs/reports/androidTests/connected/* directory.
 
-The app can be run on minimum 10 version of Android (Gingerbread)
+The app can be run on minimum 10th version of Android (Gingerbread)
 
 # Examples of features to do in future
 
