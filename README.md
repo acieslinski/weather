@@ -28,10 +28,10 @@ The app can be run on minimum 10 version of Android (Gingerbread)
 - activity recreation not handled
 -- providing the view model by the DI as a singleton to the activity can be a solution
 
-## Tests
+## Tests proposals
 
 - asserting correctness of the data models
 - asserting correctness of the view models according to the data models
 - unit tests for the view models
 - instrumentation tests to assert correctness of the views according to the view models
--- asserting correct number of the items in the recycler view
+- asserting correct number of the items in the recycler view
