@@ -1,9 +1,8 @@
 package org.amcmobileware.weather.activities;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 
 import org.amcmobileware.weather.R;
 import org.amcmobileware.weather.databinding.ActivityWeatherBinding;

@@ -13,8 +13,6 @@ import org.mockito.junit.MockitoRule;
 import retrofit2.Call;
 import retrofit2.Response;
 
-import static org.mockito.Mockito.when;
-
 /**
  * Created by Arkadiusz Cieśliński on 12/06/2017.
  * - acieslinski@gmail.com
