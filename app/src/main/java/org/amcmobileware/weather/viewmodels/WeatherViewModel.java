@@ -3,6 +3,7 @@ package org.amcmobileware.weather.viewmodels;
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableField;
 import android.databinding.ObservableList;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import org.amcmobileware.weather.communication.WeatherServiceAdapter;
@@ -35,7 +36,8 @@ public class WeatherViewModel implements Callback<WeatherModel> {
     }
 
     @Override
-    public void onResponse(Call<WeatherModel> call, Response<WeatherModel> response) {
+    public void onResponse(@NonNull Call<WeatherModel> call,
+                           @NonNull Response<WeatherModel> response) {
         if (response.isSuccessful()) {
             WeatherModel weatherModel = response.body();
 
@@ -46,15 +48,13 @@ public class WeatherViewModel implements Callback<WeatherModel> {
 
                 weatherRecordViewModels.add(viewModel);
             }
-
-            // TODO call listener
         } else {
             // TODO handle the fail state
         }
     }
 
     @Override
-    public void onFailure(Call<WeatherModel> call, Throwable t) {
+    public void onFailure(@NonNull Call<WeatherModel> call, @NonNull Throwable t) {
         Log.e("retrofit", Log.getStackTraceString(t));
     }
 
