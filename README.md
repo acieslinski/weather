@@ -18,6 +18,9 @@ The app can be run on minimum 10th version of Android (Gingerbread)
 
 - sorting the list of weather records according to the date (descending)
 - showing details of weather in a dialog
+- implementing the progressbar to show the loading state
+- elevating the header area to comply with the material design pattern
+- restoring the state of the activity after when app has been killed
 
 ## Current technical debts
 
