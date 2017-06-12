@@ -1,5 +1,7 @@
 # Weather app
 
+The app can be run on minimum 10th version of Android (Gingerbread). It uses among others Retrofit, Databinding, Picasso, Mockito, constraint layout. It has been written in the MVVM pattern.
+
 ## How to run
 
 To build and install app just type **./gradlew intstallDebug** from the root of the project. Run **adb devices** to be sure that your device is connected.
@@ -8,13 +10,13 @@ To just make a build run **./gradlew assembleDebug** from the root of the projec
 
 To use your emulator run **emulator -avd avd_name**. You can find the list of available emulators with **emulator -list-avds**. Once your emulator is ready run **adb install path/to/your_app.apk**.
 
-**Testing**
+###Testing
+
 To run unit tests you can run **./gradlew test** from the root of the project. The test result will be in *path_to_the_project/app/build/reports/tests/* directory.
-To run instrumented tests you can run **./gradlew connectedAndroidTest** from the root of the project. The test result will be in *path_to_the_project/app/build/outputs/reports/androidTests/connected/* directory (device or emulator must be connected).
+
+To run instrumented tests you can run **./gradlew connectedAndroidTest** from the root of the project (a device or an emulator must be connected). The test result will be in *path_to_the_project/app/build/outputs/reports/androidTests/connected/* directory.
 
 Warning: 3 unit tests fail, 1 unit test passes, 1 instrumented test passes
-
-The app can be run on minimum 10th version of Android (Gingerbread)
 
 ## Examples of features to do in future
 
@@ -23,6 +25,7 @@ The app can be run on minimum 10th version of Android (Gingerbread)
 - implementing the progressbar to show the loading state
 - elevating the header area to comply with the material design pattern
 - restoring the state of the activity after when app has been killed
+- dialog with trouble description (network connection lost, etc.)
 
 ## Current technical debts
 
