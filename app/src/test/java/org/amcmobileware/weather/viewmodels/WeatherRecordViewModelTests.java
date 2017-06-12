@@ -56,7 +56,7 @@ public class WeatherRecordViewModelTests {
                 weatherRecordModelMock);
 
         Assert.assertEquals("23.45" + DEGREES, weatherRecordViewModel.getTemperature());
-        Assert.assertEquals("12-06-2017\n18:30", weatherRecordViewModel.getDate());
+        Assert.assertEquals("12-06-2017\n06:30 PM", weatherRecordViewModel.getDate());
 
         // TODO test title and description
     }

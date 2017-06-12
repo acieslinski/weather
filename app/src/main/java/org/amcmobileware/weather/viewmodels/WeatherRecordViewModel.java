@@ -15,7 +15,7 @@ import static org.amcmobileware.weather.AppContract.DEGREES;
 
 public class WeatherRecordViewModel {
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat(
-            "dd-MM-yyyy\nhh:mm", Locale.getDefault());
+            "dd-MM-yyyy\nhh:mm a", Locale.getDefault());
 
     private final String title;
     private final String description;
