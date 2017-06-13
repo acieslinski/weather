@@ -25,13 +25,12 @@ Warning: 3 unit tests fail, 1 unit test passes, 1 instrumented test passes
 - implementing the progressbar to show the loading state
 - elevating the header area to comply with the material design pattern
 - restoring the state of the activity after when app has been killed
-- dialog with trouble description (network connection lost, etc.)
+- dialog on failed request (network connection lost, etc.)
 
 ## Current technical debts
 
 - lack of dependency injection
 - not safe according to the response (null pointers)
-- lack of assertions of correctness of the data models
 - activity recreation not handled
     - providing the view model by the DI as a singleton to the activity can be a solution (not for every case)
     - parceling the view model would be better solution but more difficult to implement & maintain
@@ -40,7 +39,6 @@ Warning: 3 unit tests fail, 1 unit test passes, 1 instrumented test passes
 ## More tests proposals
 
 - unit tests for the WeatherRecordListAdapter
-- unit tests for the wrong response (with wrong data types)
 - instrumented tests for WeatherActivity
     - testing the 'GO' button action
     - testing recreating of the activity
