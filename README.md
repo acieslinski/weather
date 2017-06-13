@@ -31,6 +31,8 @@ Warning: 3 unit tests fail, 1 unit test passes, 1 instrumented test passes
 
 - lack of dependency injection
 - not safe according to the response (null pointers)
+- not elevated header area to comply with the material design (the scrolling area should hide under another view - not just disappearing)
+- no information about the state of the response
 - activity recreation not handled
     - providing the view model by the DI as a singleton to the activity can be a solution (not for every case)
     - parceling the view model would be better solution but more difficult to implement & maintain
