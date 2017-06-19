@@ -37,6 +37,8 @@ Warning: 3 unit tests fail, 1 unit test passes, 1 instrumented test passes
     - providing the view model by the DI as a singleton to the activity can be a solution (not for every case)
     - parceling the view model would be better solution but more difficult to implement & maintain
     - serializing the view model would be easy solution but not effective with bigger quantity of data
+- observers are not being disposed of when they are not useful anymore
+    - interrupting for fetching the data
 
 ## More tests proposals
 
